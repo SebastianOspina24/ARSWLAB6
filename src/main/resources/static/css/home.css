@@ -1,0 +1,17 @@
+body{
+    padding: 3%;
+    background-color:white;
+    color: black;
+    font-family:monospace;
+}
+.searchBar{
+    margin:5%;
+    padding: 1%;
+    align-items:center;
+    border-style: none none solid none;
+    border-bottom-color: black;
+}
+.searchBar *{
+    display: inline;
+    margin: 1%;
+}
