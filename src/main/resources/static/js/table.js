@@ -2,11 +2,13 @@ class Tabla extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            blueprints=[]
-        };
+            author = document.getElementById("author").value
+        }
+        const blueprints = []
     }
     render() {
         <div>
+            <h2>{this.state.author}</h2>
             <table>
                 <tr>
                     <th>Blueprint name</th>
