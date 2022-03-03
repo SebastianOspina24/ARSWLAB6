@@ -23,7 +23,7 @@ class Tabla extends React.Component {
 
 
 
-class row extends React.Component {
+class Row extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
