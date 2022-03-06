@@ -9,9 +9,24 @@ body{
     padding: 1%;
     align-items:center;
     border-style: none none solid none;
+    width: 33%;
     border-bottom-color: black;
 }
 .searchBar *{
     display: inline;
     margin: 1%;
+}
+.consulta{
+    padding: 2% 7%;
+}
+
+table *{
+    border: 1px solid;
+    padding: 1%;
+    text-align: center;
+    align-items: center;
+    margin: 1%;
+  }
+th{
+      width: 33%;
 }

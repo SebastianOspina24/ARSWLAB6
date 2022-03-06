@@ -70,7 +70,7 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence{
     public Set<Blueprint> getBlueprintsByAuthor(String author) throws BlueprintNotFoundException {
         Set<Blueprint> temp = new HashSet<>();
         for (Map.Entry<Tuple<String,String>,Blueprint> set:blueprints.entrySet()) {
-            if(set.getValue().getAuthor() == author)temp.add(set.getValue());
+            if(set.getValue().getAuthor().equals(author))temp.add(set.getValue());
         }
         return temp;
     }

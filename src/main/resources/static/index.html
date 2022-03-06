@@ -8,24 +8,29 @@
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/home.css" />
+    <script src="/js/app.js"></script>
 </head>
 
 <body>
     <h1>Blueprints</h1>
     <section class="searchBar">
-        <form action="">
-            <h3>Author</h3>
-            <input type="text" placeholder="Nombre del author">
-            <input class="btn" type="submit" value="Get Blueprints">
-        </form>
+        <h3>Author</h3>
+        <input id="inputAuthor" type="text" placeholder="Nombre del author">
+        <Button class="btn" onclick="consulta()">Get Blueprints</Button>
     </section>
     <section class="consulta">
         <div class="blueprintsInfo">
-            <h2></h2>
-            <div id="table"></div>
+            <h2 id="nombreAutor"></h2>
+            <table id="tablablueprints">
+                <tr>
+                    <th>Blueprint name</th>
+                    <th>Number of points</th>
+                    <th>Open</th>
+                </tr>
+            </table>
         </div>
         <div class="currentBlueprint">
-
+            <p class="ifo"></p>
         </div>
 
     </section>
